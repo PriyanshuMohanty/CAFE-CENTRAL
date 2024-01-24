@@ -1,0 +1,151 @@
+/* *{
+    border:1px solid red;
+} */
+
+/* NAVBAR */
+
+#hamburger label {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   height: 25px;
+   width: 25px;
+   position: absolute;
+   right: 30px;
+   top: 60px;
+   z-index: 999;
+}
+
+#hamburger label div {
+   background-color: white;
+   width: 100%;
+   height: 3.5px;
+}
+
+#hamburger input:checked~label div:first-child {
+   margin-left: 4px;
+   transform: rotate(45deg);
+   transform-origin: top left;
+   transition: all 0.3s ease-in-out;
+}
+
+#hamburger input:checked~label div:nth-child(2) {
+   width: 0;
+   transform-origin: center;
+}
+
+#hamburger input:checked~label div:last-child {
+   margin-left: 4px;
+   transform: rotate(-45deg);
+   transform-origin: bottom left;
+   transition: all 0.3s ease-in-out;
+}
+
+.phonenavbar {
+   display: none;
+}
+
+#hamburger input:checked~.phonenavbar {
+   display: block;
+   position: fixed;
+   top: 0;
+   right: 0;
+   width: 100%;
+   height: 100vh;
+   background-color: rgb(44, 93, 74);
+   z-index: 99;
+}
+
+#hamburger input:checked~label {
+   position: fixed;
+}
+
+#hamburger input:checked~.phonenavbar ul {
+   display: block;
+   margin: 80px 0 0 40px;
+}
+
+#hamburger input:checked~.phonenavbar ul li:nth-child(6) {
+   margin-left: 0;
+   display: inline-block;
+}
+
+#hamburger input:checked~.phonenavbar ul li:last-child {
+   display: inline-block;
+}
+
+/* MENU */
+
+#menu_bg {
+   flex-direction: column;
+}
+
+#menu_bg #menu_img {
+   width: 500px;
+   height: 550px;
+}
+
+#menu_bg #menu_items {
+   width: 500px;
+   height: auto;
+   max-height: 564px;
+   margin-top: 15px;
+   margin-left: 0;
+}
+
+#menu_bg #menu_items>div:nth-child(2) {
+   height: auto;
+   max-height: 473px;
+}
+
+#menu_bg #menu_items>div:nth-child(2)>div span:first-child {
+   width: 250px;
+}
+
+/* MEMORIES */
+
+#memories{
+   
+}
+
+/* CHIEFCOOK */
+
+#chiefcook #chiefcook_quote,
+#chiefcook #chiefcook_bio {
+   width: 40vw;
+}
+
+#customer_reviews #review_box>div {
+   width: 90vw;
+}
+
+#customer_reviews #review_box>div #review {
+   width: 670px;
+}
+
+
+@media only screen and (max-width: 900px) {
+   #customer_reviews #review_box>div #review {
+      width: 75%;
+   }
+
+   @media only screen and (max-width: 800px) {
+      #chiefcook {
+         flex-direction: column;
+         align-items: center;
+
+      }
+
+      #chiefcook_bio{
+         margin-top: 30px;
+      }
+
+      #chiefcook #chiefcook_quote,
+      #chiefcook #chiefcook_bio {
+         width: 85vw;
+      }
+
+   }
+
+
+}
