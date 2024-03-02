@@ -1,696 +1,732 @@
 /* CSS RESET  */
 
 * {
-    padding: 0;
-    margin: 0;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    /* border: 1px solid red; */
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  box-sizing: border-box;
 }
 
 /* MAIN BACKGRAUND */
 #main_bg {
-    position: fixed;
-    height: 100%;
-    width: 100%;
-    z-index: -99;
-    background: url(/images/main\ bg.jpg )no-repeat center center/cover;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  z-index: -99;
+  background: url(/images/main\ bg.jpg) no-repeat center center/cover;
 }
 
 /* NAVBAR  */
 #navbar {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 15px 25px;
-    justify-content: center;
-    align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 15px 25px;
+  justify-content: center;
+  align-items: center;
 }
 
 .navbarlogo a {
-    display: block;
-    width: 200px;
+  display: block;
+  width: 200px;
 }
 
 .navbarlogo a img {
-    filter: brightness(0) invert(1);
-    cursor: pointer;
-
+  filter: brightness(0) invert(1);
+  cursor: pointer;
 }
 
 .navbarlist div ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .navbarlist div ul li {
-    list-style: none;
-    padding: 12px 12px;
+  list-style: none;
+  padding: 12px 12px;
 }
 
 .navbarlist div ul li a {
-    text-decoration: none;
-    color: white;
-    font-size: 1.22rem;
-    display: block;
-    width: max-content;
+  text-decoration: none;
+  color: white;
+  font-size: 1.22rem;
+  display: block;
+  width: max-content;
 }
 
 .navbarlist div ul li a:hover {
-    color: rgb(172, 170, 170);
+  color: rgb(172, 170, 170);
 }
 
 .navbarlist div ul li:nth-child(6) {
-    margin-left: 40px;
-
+  margin-left: 40px;
 }
 
 .navbarlist div ul li:is(:nth-child(6), :nth-child(7)) a:hover {
-    color: white;
+  color: white;
 }
 
-#hamburger input{
-    display: none;
+#hamburger input {
+  display: none;
 }
-
 
 /* HOME  */
 
 #home {
-    height: 410.5px;
+  height: 410.5px;
 }
 
-
 #home::before {
-    content: "";
-    background: url(/images/bg.jpg)no-repeat center center/cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    height: 545px;
-    width: 100%;
-
+  content: '';
+  background: url(/images/bg.jpg) no-repeat center center/cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  height: 545px;
+  width: 100%;
 }
 
 #home div,
 #home {
-    display: grid;
-    align-items: center;
-    justify-content: center;
-
+  display: grid;
+  align-items: center;
+  justify-content: center;
 }
 
-
 #home .homeheading {
-    background-color: rgba(255, 255, 255, 0.463);
-    color: white;
-    width: 550px;
-    text-align: center;
-
+  background-color: rgba(255, 255, 255, 0.463);
+  color: white;
+  width: 550px;
+  text-align: center;
 }
 
 #home .homeheading h2:first-child {
-    font-size: 1.4rem;
-    font-weight: 500;
-    margin-top: 52px;
-    margin-bottom: 10px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin-top: 52px;
+  margin-bottom: 10px;
 }
 
 #home .homeheading h2:last-child {
-    font-size: 2.8rem;
-    margin-bottom: 52px;
+  font-size: 2.8rem;
+  margin-bottom: 52px;
 }
 
-
 #home .homebutton {
-    position: relative;
-    top: -24.2px;
-    padding-bottom: 100px;
+  position: relative;
+  top: -24.2px;
+  padding-bottom: 100px;
 }
 
 /* GALLERY */
 #gallery {
-    background-color: white;
-
+  background-color: white;
 }
 
 .galleryimg {
-    display: flex;
-    justify-content: space-evenly;
-    padding-bottom: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 20px;
 }
 
-.galleryimg>div {
-    width: 23.3vw;
-    height: 23.3vw;
-    overflow: hidden;
+.galleryimg > div {
+  width: 23.3vw;
+  height: 23.3vw;
+  overflow: hidden;
 }
 
 #gallery h2 {
-    text-align: center;
-    font-size: 3rem;
-    color: rgb(44, 93, 74);
-    padding-top: 70px;
-    margin-bottom: 45px;
+  text-align: center;
+  font-size: 3rem;
+  color: rgb(44, 93, 74);
+  padding-top: 70px;
+  margin-bottom: 45px;
 }
 
-.galleryimg>div img {
-    transition: all 1s ease-in-out;
-    object-fit: cover;
+.galleryimg > div img {
+  transition: all 1s ease-in-out;
+  object-fit: cover;
 }
 
-.galleryimg>div img:hover {
-    transform: scale(1.2);
+.galleryimg > div img:hover {
+  transform: scale(1.2);
 }
 
 /* MENU  */
 #Menu {
-    background: url(/images/menu\ bg.jpg)no-repeat center center/cover;
+  background: url(/images/menu\ bg.jpg) no-repeat center center/cover;
 }
 
 #Menu_list {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    background: linear-gradient(rgba(209, 213, 218, 0.75), rgba(209, 213, 218, 0.75));
-    backdrop-filter: blur(15px);
-    padding-top: 70px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(
+    rgba(209, 213, 218, 0.75),
+    rgba(209, 213, 218, 0.75)
+  );
+  backdrop-filter: blur(15px);
+  padding-top: 70px;
 }
 
-#Menu_list>div h2 {
-    color: rgb(44, 93, 74);
-    font-size: 3rem;
+#Menu_list > div h2 {
+  color: rgb(44, 93, 74);
+  font-size: 3rem;
 }
 
-#Menu_list>p {
-    color: rgb(3, 74, 66);
-    margin: 20px 0;
-    font-size: 1.4rem;
+#Menu_list > p {
+  color: rgb(3, 74, 66);
+  margin: 20px 0;
+  font-size: 1.4rem;
 }
 
 #Menu_list #Menu_dishes {
-    display: flex;
-    width: 65vw;
-    justify-content: space-between;
+  display: flex;
+  width: 65vw;
+  justify-content: space-between;
 }
 
-#Menu_list #Menu_dishes>div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px 60px 8px 60px;
-    position: relative;
-    overflow: hidden;
-    cursor: pointer;
+#Menu_list #Menu_dishes > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 60px 8px 60px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
 }
 
-#Menu_list #Menu_dishes>div i {
-    font-size: 2.2rem;
-    color: rgba(44, 93, 74, 0.5);
+#Menu_list #Menu_dishes > div i {
+  font-size: 2.2rem;
+  color: rgba(44, 93, 74, 0.5);
 }
 
-#Menu_list #Menu_dishes>div span {
-    color: rgba(44, 93, 74, 0.5);
-    margin-top: 15px;
-    font-size: 1.3rem;
-    font-weight: bold;
+#Menu_list #Menu_dishes > div span {
+  color: rgba(44, 93, 74, 0.5);
+  margin-top: 15px;
+  font-size: 1.3rem;
+  font-weight: bold;
 }
 
-#Menu_list #Menu_dishes>div:hover :is(i, span) {
-    color: rgb(136, 119, 67);
-    transition: color 0.3s;
+#Menu_list #Menu_dishes > div:hover :is(i, span) {
+  color: rgb(136, 119, 67);
+  transition: color 0.3s;
 }
 
-#Menu_list #Menu_dishes>div .Dishes_icon {
-    color: rgb(136, 119, 67);
+#Menu_list #Menu_dishes .active :is(i, span) {
+  color: rgb(136, 119, 67);
 }
 
-#Menu_list #Menu_dishes>div .active,
-#Menu_list #Menu_dishes>div:hover .Dishes_border {
-    position: absolute;
-    bottom: -8px;
-    width: 85%;
-    border: 8px solid rgb(136, 119, 67);
-    border-radius: 6px;
-    animation: bodercolor 0.3s ease-in-out;
+#Menu_list #Menu_dishes .active .Dishes_border,
+#Menu_list #Menu_dishes > div:hover .Dishes_border {
+  position: absolute;
+  bottom: -8px;
+  width: 85%;
+  border: 8px solid rgb(136, 119, 67);
+  border-radius: 6px;
+  animation: bodercolor 0.3s ease-in-out;
 }
 
 @keyframes bodercolor {
-    0% {
-        width: 0%;
-    }
+  0% {
+    width: 0%;
+  }
 
-    100% {
-        width: 85%;
-    }
+  100% {
+    width: 85%;
+  }
 }
 
-
 #menu_bg {
-    padding: 30px 0 60px 0;
-    background-color: rgba(182, 191, 196, 0.453);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  padding: 30px 0 60px 0;
+  background-color: rgba(182, 191, 196, 0.453);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #menu_bg #menu_img {
-    width: 374px;
-    height: 453px;
+  width: 374px;
+  height: 453px;
 }
 
 #menu_bg #menu_img img {
-    object-fit: cover;
-    object-position: 100% 98%;
-    border-radius: 12px;
+  object-fit: cover;
+  object-position: 100% 98%;
+  border-radius: 12px;
+}
+
+#menu_bg #menu_items::before {
+  content: '';
+  background-image: url('data:image/svg+xml;utf8,<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="890" height="18.09" viewBox="0 0 890 18.09"><path class="cls-1" style="fill:rgb(136,119,67);" d="M889.89,0a7.22,7.22,0,0,0-7.41,7v3.66a7.23,7.23,0,0,1-6.14,3.36,7.12,7.12,0,0,1-7.22-7,7.22,7.22,0,0,0-14.43,0v3.66a7.23,7.23,0,0,1-6.14,3.36,7.13,7.13,0,0,1-7.22-7,7.22,7.22,0,0,0-14.44,0v3.66a7.23,7.23,0,0,1-6.13,3.36,7.12,7.12,0,0,1-7.22-7A7.22,7.22,0,0,0,799.1,7v3.66A7.23,7.23,0,0,1,793,14.05a7.13,7.13,0,0,1-7.22-7,7.22,7.22,0,0,0-14.43,0v3.66a7.23,7.23,0,0,1-6.14,3.36A7.13,7.13,0,0,1,758,7a7.22,7.22,0,0,0-14.44,0v3.66a7.23,7.23,0,0,1-6.13,3.36,7.11,7.11,0,0,1-7.22-7,7.22,7.22,0,0,0-14.44,0v3.66a7.23,7.23,0,0,1-6.14,3.36,7.13,7.13,0,0,1-7.22-7,7.22,7.22,0,0,0-14.43,0v3.66a7.25,7.25,0,0,1-6.14,3.36,7.12,7.12,0,0,1-7.22-7,7.22,7.22,0,0,0-14.44,0v3.66A7.23,7.23,0,0,1,654,14.05a7.12,7.12,0,0,1-7.21-7,7.22,7.22,0,0,0-14.44,0v3.66a7.23,7.23,0,0,1-6.14,3.36A7.13,7.13,0,0,1,619,7a7.22,7.22,0,0,0-14.43,0v3.66a7.25,7.25,0,0,1-6.14,3.36,7.12,7.12,0,0,1-7.22-7A7.13,7.13,0,0,0,584,0l-.3,0v0a7.22,7.22,0,0,0-6.29,7,4.69,4.69,0,0,1,0,.53,7,7,0,0,1-14-.53A7.22,7.22,0,0,0,549,7v3.66a7.22,7.22,0,0,1-6.13,3.36,7.13,7.13,0,0,1-7.22-7,7.22,7.22,0,0,0-14.44,0v3.66A7.23,7.23,0,0,1,515,14.05a7.11,7.11,0,0,1-7.21-7,7.22,7.22,0,0,0-14.44,0v3.66a7.23,7.23,0,0,1-6.14,3.36A7.13,7.13,0,0,1,480,7a7.22,7.22,0,0,0-14.44,0v3.66a7.22,7.22,0,0,1-6.13,3.36,7.12,7.12,0,0,1-7.22-7,7.22,7.22,0,0,0-14.44,0v3.66a7.23,7.23,0,0,1-6.13,3.36,7.13,7.13,0,0,1-7.23-7A7.22,7.22,0,0,0,410,7v3.66a7.23,7.23,0,0,1-6.14,3.36,7.13,7.13,0,0,1-7.22-7,7.22,7.22,0,0,0-14.44,0v3.66a7.23,7.23,0,0,1-6.13,3.36,7.12,7.12,0,0,1-7.22-7A7.22,7.22,0,0,0,354.4,7v3.66a7.23,7.23,0,0,1-6.14,3.36A7.13,7.13,0,0,1,341,7a7.22,7.22,0,0,0-14.43,0v3.66a7.26,7.26,0,0,1-6.15,3.36,7.13,7.13,0,0,1-7.22-7A7.22,7.22,0,0,0,298.8,7v3.66a7.22,7.22,0,0,1-6.13,3.36,7.12,7.12,0,0,1-7.22-7A7.22,7.22,0,0,0,271,7v3.66a7.22,7.22,0,0,1-6.13,3.36,7.12,7.12,0,0,1-7.22-7,7.22,7.22,0,0,0-14.44,0v3.66a7.23,7.23,0,0,1-6.14,3.36,7.12,7.12,0,0,1-7.22-7,7.22,7.22,0,0,0-14.43,0v3.66a7.23,7.23,0,0,1-6.14,3.36,7.13,7.13,0,0,1-7.22-7,7.22,7.22,0,0,0-14.44,0v3.66a7.22,7.22,0,0,1-6.13,3.36,7.12,7.12,0,0,1-7.22-7,7.22,7.22,0,0,0-14.44,0v3.66a7.23,7.23,0,0,1-6.14,3.36,7.12,7.12,0,0,1-7.22-7,7.22,7.22,0,0,0-14.43,0v3.66a7.23,7.23,0,0,1-6.14,3.36,7.13,7.13,0,0,1-7.22-7,7.22,7.22,0,0,0-14.44,0v3.66a7.23,7.23,0,0,1-6.13,3.36A7.11,7.11,0,0,1,90.9,7,7.22,7.22,0,0,0,76.46,7v3.66a7.23,7.23,0,0,1-6.14,3.36A7.13,7.13,0,0,1,63.1,7,7.22,7.22,0,0,0,48.67,7v3.66a7.25,7.25,0,0,1-6.14,3.36,7.13,7.13,0,0,1-7.22-7A7.22,7.22,0,0,0,20.87,7v3.66a7.23,7.23,0,0,1-6.13,3.36A7.12,7.12,0,0,1,7.52,7,7.13,7.13,0,0,0,.3,0L0,0V18.09H890V0Z" transform="translate(0 0)"></path></svg>');
+  width: 100%;
+  height: 1rem;
+  position: absolute;
+  top: -1rem;
+  left: 0;
+}
+
+#menu_bg #menu_items::after {
+  content: '';
+  background-image: url('data:image/svg+xml;utf8,<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="890" style="transform:rotate(180deg);" height="18.09" viewBox="0 0 890 18.09"><path class="cls-1" style="fill:rgb(136,119,67);" d="M889.89,0a7.22,7.22,0,0,0-7.41,7v3.66a7.23,7.23,0,0,1-6.14,3.36,7.12,7.12,0,0,1-7.22-7,7.22,7.22,0,0,0-14.43,0v3.66a7.23,7.23,0,0,1-6.14,3.36,7.13,7.13,0,0,1-7.22-7,7.22,7.22,0,0,0-14.44,0v3.66a7.23,7.23,0,0,1-6.13,3.36,7.12,7.12,0,0,1-7.22-7A7.22,7.22,0,0,0,799.1,7v3.66A7.23,7.23,0,0,1,793,14.05a7.13,7.13,0,0,1-7.22-7,7.22,7.22,0,0,0-14.43,0v3.66a7.23,7.23,0,0,1-6.14,3.36A7.13,7.13,0,0,1,758,7a7.22,7.22,0,0,0-14.44,0v3.66a7.23,7.23,0,0,1-6.13,3.36,7.11,7.11,0,0,1-7.22-7,7.22,7.22,0,0,0-14.44,0v3.66a7.23,7.23,0,0,1-6.14,3.36,7.13,7.13,0,0,1-7.22-7,7.22,7.22,0,0,0-14.43,0v3.66a7.25,7.25,0,0,1-6.14,3.36,7.12,7.12,0,0,1-7.22-7,7.22,7.22,0,0,0-14.44,0v3.66A7.23,7.23,0,0,1,654,14.05a7.12,7.12,0,0,1-7.21-7,7.22,7.22,0,0,0-14.44,0v3.66a7.23,7.23,0,0,1-6.14,3.36A7.13,7.13,0,0,1,619,7a7.22,7.22,0,0,0-14.43,0v3.66a7.25,7.25,0,0,1-6.14,3.36,7.12,7.12,0,0,1-7.22-7A7.13,7.13,0,0,0,584,0l-.3,0v0a7.22,7.22,0,0,0-6.29,7,4.69,4.69,0,0,1,0,.53,7,7,0,0,1-14-.53A7.22,7.22,0,0,0,549,7v3.66a7.22,7.22,0,0,1-6.13,3.36,7.13,7.13,0,0,1-7.22-7,7.22,7.22,0,0,0-14.44,0v3.66A7.23,7.23,0,0,1,515,14.05a7.11,7.11,0,0,1-7.21-7,7.22,7.22,0,0,0-14.44,0v3.66a7.23,7.23,0,0,1-6.14,3.36A7.13,7.13,0,0,1,480,7a7.22,7.22,0,0,0-14.44,0v3.66a7.22,7.22,0,0,1-6.13,3.36,7.12,7.12,0,0,1-7.22-7,7.22,7.22,0,0,0-14.44,0v3.66a7.23,7.23,0,0,1-6.13,3.36,7.13,7.13,0,0,1-7.23-7A7.22,7.22,0,0,0,410,7v3.66a7.23,7.23,0,0,1-6.14,3.36,7.13,7.13,0,0,1-7.22-7,7.22,7.22,0,0,0-14.44,0v3.66a7.23,7.23,0,0,1-6.13,3.36,7.12,7.12,0,0,1-7.22-7A7.22,7.22,0,0,0,354.4,7v3.66a7.23,7.23,0,0,1-6.14,3.36A7.13,7.13,0,0,1,341,7a7.22,7.22,0,0,0-14.43,0v3.66a7.26,7.26,0,0,1-6.15,3.36,7.13,7.13,0,0,1-7.22-7A7.22,7.22,0,0,0,298.8,7v3.66a7.22,7.22,0,0,1-6.13,3.36,7.12,7.12,0,0,1-7.22-7A7.22,7.22,0,0,0,271,7v3.66a7.22,7.22,0,0,1-6.13,3.36,7.12,7.12,0,0,1-7.22-7,7.22,7.22,0,0,0-14.44,0v3.66a7.23,7.23,0,0,1-6.14,3.36,7.12,7.12,0,0,1-7.22-7,7.22,7.22,0,0,0-14.43,0v3.66a7.23,7.23,0,0,1-6.14,3.36,7.13,7.13,0,0,1-7.22-7,7.22,7.22,0,0,0-14.44,0v3.66a7.22,7.22,0,0,1-6.13,3.36,7.12,7.12,0,0,1-7.22-7,7.22,7.22,0,0,0-14.44,0v3.66a7.23,7.23,0,0,1-6.14,3.36,7.12,7.12,0,0,1-7.22-7,7.22,7.22,0,0,0-14.43,0v3.66a7.23,7.23,0,0,1-6.14,3.36,7.13,7.13,0,0,1-7.22-7,7.22,7.22,0,0,0-14.44,0v3.66a7.23,7.23,0,0,1-6.13,3.36A7.11,7.11,0,0,1,90.9,7,7.22,7.22,0,0,0,76.46,7v3.66a7.23,7.23,0,0,1-6.14,3.36A7.13,7.13,0,0,1,63.1,7,7.22,7.22,0,0,0,48.67,7v3.66a7.25,7.25,0,0,1-6.14,3.36,7.13,7.13,0,0,1-7.22-7A7.22,7.22,0,0,0,20.87,7v3.66a7.23,7.23,0,0,1-6.13,3.36A7.12,7.12,0,0,1,7.52,7,7.13,7.13,0,0,0,.3,0L0,0V18.09H890V0Z" transform="translate(0 0)"></path></svg>');
+  width: 100%;
+  height: 1rem;
+  position: absolute;
+  bottom: -1rem;
+  left: 0;
 }
 
 #menu_bg #menu_items {
-    width: 748px;
-    background-color: rgb(136, 119, 67);
-    padding: 20px 30px;
-    margin-left: 15px;
-    color: white;
-    border-radius: 12px;
+  width: 748px;
+  background-color: rgb(136, 119, 67);
+  padding: 20px 30px;
+  margin-left: 15px;
+  color: white;
+  position: relative;
 }
 
 #menu_bg #menu_items h3 {
-    padding-top: 12px;
-    font-size: 1.6rem;
+  padding-top: 12px;
+  font-size: 1.6rem;
 }
 
-#menu_bg #menu_items>div:nth-child(2) {
-    height: 360px;
-    margin-top: 12px;
-    border-top: 1px solid white;
-    overflow-y: scroll;
-
+#menu_bg #menu_items > div:nth-child(2) {
+  height: 360px;
+  margin-top: 12px;
+  border-top: 1px solid white;
+  overflow-y: scroll;
 }
 
-#menu_bg #menu_items>div:nth-child(2)::-webkit-scrollbar {
-    width: 5px;
-    border-radius: 20px;
+#menu_bg #menu_items > div:nth-child(2)::-webkit-scrollbar {
+  width: 5px;
+  border-radius: 20px;
 }
 
-#menu_bg #menu_items>div:nth-child(2)::-webkit-scrollbar-thumb {
-    background-color: rgb(125, 105, 37);
-
+#menu_bg #menu_items > div:nth-child(2)::-webkit-scrollbar-thumb {
+  background-color: rgb(125, 105, 37);
 }
 
-#menu_bg #menu_items>div:nth-child(2)>div {
-    display: flex;
-    justify-content: space-between;
-    padding: 12px;
-    font-size: 1.1rem;
+#menu_bg #menu_items > div:nth-child(2) > div {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px;
+  font-size: 1.1rem;
 }
 
 /* MEMORIES */
 #memories {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    padding: 70px 0;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 70px 0;
 }
 
-#memories>div{
-   width: 90vw;
+#memories > div {
+  width: 90vw;
 }
 
 #memories h2 {
-    color: white;
-    font-size: 3.1rem;
-    margin-bottom: 22px;
+  color: white;
+  font-size: 3.1rem;
+  margin-bottom: 22px;
 }
 
 #memories p {
-    color: white;
-    font-size: 1.35rem;
+  color: white;
+  font-size: 1.35rem;
 }
 
 #memories_btn {
-    margin-top: 42px;
+  margin-top: 42px;
 }
-
 
 /* CHIEFCOOK */
 
 #chiefcook {
-    background-color: white;
-    display: flex;
-    justify-content: space-evenly;
-    padding: 75px 0;
+  background-color: white;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 75px 0;
 }
 
 #chiefcook #chiefcook_quote,
 #chiefcook #chiefcook_bio {
-    width: 384px;
+  width: 384px;
 }
 
 #chiefcook #chiefcook_quote h2 {
-    font-size: 3.8rem;
-    color: rgb(136, 119, 67);
+  font-size: 3.8rem;
+  color: rgb(136, 119, 67);
 }
 
-#chiefcook #chiefcook_quote>div:nth-child(2) {
-    font-size: 1.3rem;
-    margin-top: 25px;
-    color: rgb(80, 80, 80);
+#chiefcook #chiefcook_quote > div:nth-child(2) {
+  font-size: 1.3rem;
+  margin-top: 25px;
+  color: rgb(80, 80, 80);
 }
 
 #chiefcook #chiefcook_bio {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 #chiefcook #chiefcook_bio #chiefcook_name {
-    font-size: 2rem;
-    color: rgba(44, 93, 74);
+  font-size: 2rem;
+  color: rgba(44, 93, 74);
 }
 
-#chiefcook #chiefcook_bio>div:nth-child(2) {
-    font-size: 1.3rem;
-    color: rgb(136, 119, 67);
-    margin: 20px 0 50px 0;
+#chiefcook #chiefcook_bio > div:nth-child(2) {
+  font-size: 1.3rem;
+  color: rgb(136, 119, 67);
+  margin: 20px 0 50px 0;
 }
 
 #chiefcook #chiefcook_bio #chiefcook_img {
-    width: 280px;
-    height: 280px;
+  width: 280px;
+  height: 280px;
 }
 
 #chiefcook #chiefcook_bio #chiefcook_img img {
-    border-radius: 50%;
-    object-fit: cover;
-    object-position: 100% 70%;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: 100% 70%;
 }
 
 /* CUSTOMER REVIEWS */
 
 #customer_reviews {
-    background: url(/images/review_Bg.jpg)no-repeat center center/cover;
-    display: flex;
-    justify-content: center;
+  background: url(/images/review_Bg.jpg) no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
 }
 
 #customer_reviews #review_box {
-    background-color: rgba(255, 255, 255, 0.6);
-    backdrop-filter: blur(15px);
-    justify-content: center;
-    align-items: center;
-    border-radius: 12px;
-    margin: 80px 0;
-    display: flex;
-    width: 85.5%;
-    padding: 45px 0;
+  background-color: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(15px);
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  margin: 80px 0;
+  display: flex;
+  width: 85.5%;
+  padding: 45px 0;
 }
 
-#customer_reviews #review_box>div #review {
-    width: 768px;
+#customer_reviews #review_box > div #review {
+  width: 768px;
+  max-height: 170px;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
 }
 
-#customer_reviews #review_box>div {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 1024px;
-
+#customer_reviews #review_box > div #review::-webkit-scrollbar {
+  width: 1px;
 }
 
-#customer_reviews #review_box #review>div:nth-child(2) {
-    margin: 18px 0;
+#customer_reviews #review_box > div #review > div {
+  scroll-snap-align: center;
+  margin: 30px 0;
+}
+
+#customer_reviews #review_box > div #review > div:first-child {
+  margin-top: 0;
+}
+
+#customer_reviews #review_box > div #review > div:last-child {
+  margin-bottom: 0;
+}
+
+#customer_reviews #review_box > div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 1024px;
+}
+
+#customer_reviews #review_box #review > div:nth-child(2) {
+  margin: 18px 0;
 }
 
 #customer_reviews #review_box #review .fa-quote-left {
-    font-size: 3.2rem;
-    background-image: linear-gradient(-180deg, rgb(226, 201, 110) 0%, rgb(136, 119, 67) 96%);
-    color: transparent;
-    background-clip: text;
-    -webkit-background-clip: text;
+  font-size: 3.2rem;
+  background-image: linear-gradient(
+    -180deg,
+    rgb(226, 201, 110) 0%,
+    rgb(136, 119, 67) 96%
+  );
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
 }
 
 #customer_reviews #review_box #review :is(#customername, p) {
-    font-size: 1.3rem;
-    color: rgba(44, 93, 74);
+  font-size: 1.3rem;
+  color: rgba(44, 93, 74);
 }
 
-
 #customer_reviews #dot_wrap div i {
-    padding: 10px;
-    font-size: 0.6rem;
-    background-image: linear-gradient(-180deg, rgb(226, 201, 110) 0%, rgb(136, 119, 67) 96%);
-    color: transparent;
-    background-clip: text;
-    -webkit-background-clip: text;
+  padding: 10px;
+  font-size: 0.6rem;
+  background-image: linear-gradient(
+    -180deg,
+    rgb(226, 201, 110) 0%,
+    rgb(136, 119, 67) 96%
+  );
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
 }
 
 /* BOOKING  */
 
 #Booking {
-    background-color: rgb(44, 93, 74);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 80px 0;
+  background-color: rgb(44, 93, 74);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 0;
 }
 
-#Booking>div {
-    display: grid;
-    grid-template-columns: 5fr 4fr;
-    width: 67%;
-    height: 580px;
-    box-sizing: border-box;
+#Booking > div {
+  display: grid;
+  grid-template-columns: 5fr 4fr;
+  width: 67%;
+  height: 580px;
+  box-sizing: border-box;
 }
 
-#Booking>div #Booking_img {
-    height: 580px;
-    box-sizing: border-box;
+#Booking > div #Booking_img {
+  height: 580px;
+  box-sizing: border-box;
 }
 
-#Booking>div #Booking_img img {
-    object-fit: cover;
-    object-position: 100% 1%;
+#Booking > div #Booking_img img {
+  object-fit: cover;
+  object-position: 100% 1%;
 }
 
 /* BOOKINGFROM */
 
 #Booking_from {
-    background-color: white;
-    padding: 25px 30px;
-    height: 580px;
-    box-sizing: border-box;
+  background-color: white;
+  padding: 25px 30px;
+  height: 580px;
+  box-sizing: border-box;
 }
 
 #Booking_from h2 {
-    color: rgb(136, 119, 67);
-    font-size: 2.3rem;
+  color: rgb(136, 119, 67);
+  font-size: 2.3rem;
 }
 
 #Booking_from p {
-    color: rgb(44, 93, 74);
-    font-size: 1.3rem;
-    padding: 11px 0 18px 0;
-
+  color: rgb(44, 93, 74);
+  font-size: 1.3rem;
+  padding: 11px 0 18px 0;
 }
 
-#Booking_from label>div {
-    color: rgb(44, 93, 74);
-    font-size: 1.02rem;
+#Booking_from label > div {
+  color: rgb(44, 93, 74);
+  font-size: 1.02rem;
 }
 
 #Booking_from label input {
-    padding: 13.5px;
-    width: 100%;
-    border: 1px solid grey;
-    border-radius: 25px;
-    outline: none;
-    color: rgb(44, 93, 74);
-    font-size: 1.1rem;
-
+  padding: 13.5px;
+  width: 100%;
+  border: 1px solid grey;
+  border-radius: 25px;
+  outline: none;
+  color: rgb(44, 93, 74);
+  font-size: 1.1rem;
 }
 
 #Booking_from label textarea {
-    padding: 14px;
-    width: 100%;
-    border: 1px solid grey;
-    border-radius: 25px;
-    outline: none;
-    margin: 5px 0 12px 0;
-    resize: none;
-    font-size: 1.1rem;
-    color: rgb(44, 93, 74);
-    height: 100px;
+  padding: 14px;
+  width: 100%;
+  border: 1px solid grey;
+  border-radius: 25px;
+  outline: none;
+  margin: 5px 0 12px 0;
+  resize: none;
+  font-size: 1.1rem;
+  color: rgb(44, 93, 74);
+  height: 100px;
 }
 
-
-#Booking>div #Booking_from label .input {
-    position: relative;
-    margin: 5px 0 18px 0;
+#Booking > div #Booking_from label .input {
+  position: relative;
+  margin: 5px 0 18px 0;
 }
 
-#Booking>div #Booking_from label .required {
-    position: absolute;
-    display: flex;
-    align-items: center;
-    top: 2px;
-    right: 20px;
-    height: 100%;
-
+#Booking > div #Booking_from label .required {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  top: 2px;
+  right: 20px;
+  height: 100%;
 }
 
-#Booking>div #Booking_from button {
-    margin-top: 12px;
+#Booking > div #Booking_from button {
+  margin-top: 12px;
 }
 
 /* SCROLLTOP */
 #scrolltotop {
-    position: fixed;
-    background: linear-gradient(rgb(255, 255, 255) 0%, rgb(209, 213, 218) 100%) 0% 0% no-repeat transparent;
-    box-shadow: rgba(44, 93, 74, 0.15)0px 4px 8px;
-    border-radius: 50%;
-    border: 1px solid grey;
-    font-size: 1.3rem;
-    right: 25px;
-    bottom: 25px;
+  position: fixed;
+  background: linear-gradient(rgb(255, 255, 255) 0%, rgb(209, 213, 218) 100%) 0%
+    0% no-repeat transparent;
+  box-shadow: rgba(44, 93, 74, 0.15) 0px 4px 8px;
+  border-radius: 50%;
+  border: 1px solid grey;
+  font-size: 1.3rem;
+  right: 25px;
+  bottom: 25px;
 }
 
 #scrolltotop a {
-    display: block;
-    color: rgb(136, 119, 67);
-    padding: 12px 15px;
-
+  display: block;
+  color: rgb(136, 119, 67);
+  padding: 12px 15px;
 }
-
 
 /* FOOTER  */
 
 footer {
-    position: relative;
-    text-align: center;
-    background-color: rgba(28, 28, 28);
-    color: white;
-    padding: 10px 0;
+  position: relative;
+  text-align: center;
+  background-color: rgba(28, 28, 28);
+  color: white;
+  padding: 10px 0;
 }
 
 /* BTN  */
 .btn {
+  border-radius: 50px;
+  background-image: linear-gradient(
+    -180deg,
+    rgb(226, 201, 110) 0%,
+    rgb(136, 119, 67) 96%
+  );
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.btn a{
     padding: 15px 40px;
-    border-radius: 50px;
+    text-decoration: none;
+    display: inline-block;
     color: white;
-    background-image: linear-gradient(-180deg, rgb(226, 201, 110) 0%, rgb(136, 119, 67) 96%);
-    font-size: 1rem;
-    border: none;
-    cursor: pointer;
-    font-weight: 500;
 }
 
 .btn:hover {
-    background-image: linear-gradient(-180deg, rgb(136, 119, 67) 0%, rgb(136, 119, 67) 96%);
+  background-image: linear-gradient(
+    -180deg,
+    rgb(136, 119, 67) 0%,
+    rgb(136, 119, 67) 96%
+  );
 }
 
 /* MEDIA QUARRY */
 
-@media only screen and (max-width:1400px) {
+@media only screen and (max-width: 1400px) {
+  #Booking > div {
+    width: 70%;
+  }
 
-    #Booking>div {
-        width: 70%;
+  @media only screen and (max-width: 1250px) {
+    #Menu_list #Menu_dishes {
+      width: 72vw;
     }
 
-    @media only screen and (max-width:1250px) {
+    #menu_bg #menu_img {
+      width: 350px;
+      height: 430px;
+    }
 
-        #Menu_list #Menu_dishes {
-            width: 72vw;
-        }
+    #menu_bg #menu_items {
+      width: 700px;
+      height: 430px;
+    }
 
+    #menu_bg #menu_items h3 {
+      font-size: 1.5rem;
+    }
+
+    #menu_bg #menu_items > div:nth-child(2) > div {
+      font-size: 1.05rem;
+    }
+
+    #menu_bg #menu_items > div:nth-child(2) {
+      height: 338px;
+    }
+
+    #customer_reviews #review_box {
+      width: 90%;
+    }
+
+    #customer_reviews #review_box > div {
+      width: 950px;
+    }
+
+    #Booking > div {
+      width: 80%;
+    }
+
+    @media only screen and (max-width: 1150px) {
+      #Menu_list #Menu_dishes {
+        width: 80vw;
+      }
+
+      #menu_bg #menu_img {
+        width: 330px;
+        height: 400px;
+      }
+
+      #menu_bg #menu_items {
+        width: 630px;
+        height: 400px;
+      }
+
+      #menu_bg #menu_items > div:nth-child(2) {
+        height: 300px;
+      }
+
+      #customer_reviews #review_box > div {
+        width: 850px;
+      }
+
+      #customer_reviews #review_box > div #review {
+        width: 720px;
+      }
+
+      #Booking > div {
+        width: 83%;
+      }
+
+      @media only screen and (max-width: 1050px) {
         #menu_bg #menu_img {
-            width: 350px;
-            height: 430px;
+          width: 310px;
+          height: 380px;
         }
 
         #menu_bg #menu_items {
-            width: 700px;
-            height: 430px;
-        }
-
-        #menu_bg #menu_items h3 {
-            font-size: 1.5rem;
-        }
-
-        #menu_bg #menu_items>div:nth-child(2)>div {
-            font-size: 1.05rem;
-        }
-
-        #menu_bg #menu_items>div:nth-child(2) {
-            height: 338px;
+          width: 610px;
+          height: 380px;
         }
 
         #customer_reviews #review_box {
-            width: 90%;
+          width: 93%;
+          padding: 30px 0;
         }
-
-        #customer_reviews #review_box>div {
-            width: 950px;
-        }
-
-        #Booking>div {
-            width: 80%;
-        }
-
-        @media only screen and (max-width:1150px) {
-            #Menu_list #Menu_dishes {
-                width: 80vw;
-            }
-
-            #menu_bg #menu_img {
-                width: 330px;
-                height: 400px;
-            }
-
-            #menu_bg #menu_items {
-                width: 630px;
-                height: 400px;
-            }
-
-            #menu_bg #menu_items>div:nth-child(2) {
-                height: 300px;
-            }
-
-            #customer_reviews #review_box>div {
-                width: 850px;
-            }
-
-            #customer_reviews #review_box>div #review {
-                width: 720px;
-            }
-
-            #Booking>div {
-                width: 83%;
-            }
-
-            @media only screen and (max-width:1050px) {
-
-                #menu_bg #menu_img {
-                    width: 310px;
-                    height: 380px;
-                }
-
-
-                #menu_bg #menu_items {
-                    width: 610px;
-                    height: 380px;
-                }
-
-                #customer_reviews #review_box {
-                    width: 93%;
-                    padding: 30px 0;
-                }
-
-            }
-
-        }
+      }
     }
-
+  }
 }
