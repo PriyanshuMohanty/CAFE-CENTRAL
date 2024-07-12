@@ -227,6 +227,17 @@
         font-size: 12px;
       }
 
+      .galleryimg {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 7px;
+        margin: 0 7px;
+      }
+
+      .galleryimg > div {
+        width: 45vw;
+      }
+
       #menu_bg #menu_items {
         width: 90%;
         height: auto;
@@ -271,6 +282,30 @@
     }
 
     @media only screen and (max-width: 450px) {
+      #navbar {
+        padding: 10px;
+      }
+
+      .navbarlogo a {
+        width: 135px;
+      }
+
+      #gallery h2 {
+        padding: 50px 10px 0 10px;
+      }
+
+      #Menu_list {
+        padding-top: 50px;
+      }
+
+      #memories,
+      #chiefcook {
+        padding: 50px 0;
+      }
+
+      #customer_reviews #review_box {
+        margin: 50px 0;
+      }
       #Booking {
         padding: 0%;
       }
